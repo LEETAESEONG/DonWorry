@@ -15,7 +15,7 @@ const getData = async (key: string) => {
 
 // Authorization이 필요없는 인스턴스
 export const axiosWithoutAuth = axios.create({
-  baseURL: 'https://j9c210.p.ssafy.io',
+  baseURL: '',
   headers: {
     'Content-Type': 'application/json;charset=utf-8',
   },
@@ -23,7 +23,7 @@ export const axiosWithoutAuth = axios.create({
 
 // Authorization이 필요한 인스턴스
 export const axiosWithAuth = axios.create({
-  baseURL: 'https://j9c210.p.ssafy.io',
+  baseURL: '',
   headers: {
     'Content-Type': 'application/json;charset=utf-8',
     'Authorization': '', // 이곳에 토큰이나 필요한 인증 정보를 추가

@@ -55,7 +55,7 @@ const KakaoLogin: React.FC = () => {
         kakaoAuthToken: requestCode,
       };
       axiosWithoutAuth
-        .post('https://j9c210.p.ssafy.io/api/oauth/kakao', data)
+        .post('', data)
         .then((r) => {
           console.log(r.data.data);
           const farams = r.data.data;
